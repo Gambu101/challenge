@@ -1,0 +1,28 @@
+{
+  "name": "solana-smart-tx-stack",
+  "version": "1.0.0",
+  "description": "AI-powered Solana transaction infrastructure stack with Jito bundles, Yellowstone Geyser streaming, and autonomous AI agent",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@solana/web3.js": "^1.98.0",
+    "@triton-one/yellowstone-grpc": "^1.0.0",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^9.0.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  }
+}
